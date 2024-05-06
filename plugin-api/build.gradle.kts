@@ -1,6 +1,30 @@
 plugins {
 	`java-library`
+	`maven-publish`
 }
+
+
+publishing {
+	publications {
+		create<MavenPublication>("plugin-api") {
+			from(components["java"])
+		}
+	}
+
+	repositories {
+		maven {
+			name = "github"
+			url = uri("https://maven.pkg.github.com/asek-ll/ccemux-fork")
+			credentials {
+				username = "asek-ll"
+				password = System.getenv("GITHUB_TOKEN")
+			}
+		}
+	}
+}
+
+
+
 
 val ccVersion: String by extra
 

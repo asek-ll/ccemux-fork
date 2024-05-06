@@ -1,0 +1,106 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "net.clgd",
+    "module": "plugin-api",
+    "version": "1.1.0-1.110.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.6"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "cc.tweaked",
+          "module": "cc-tweaked-1.20.1-core",
+          "version": {
+            "requires": "1.110.3"
+          }
+        },
+        {
+          "group": "org.slf4j",
+          "module": "slf4j-api",
+          "version": {
+            "requires": "2.0.6"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "31.1-jre"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "plugin-api-1.1.0-1.110.3.jar",
+          "url": "plugin-api-1.1.0-1.110.3.jar",
+          "size": 45281,
+          "sha512": "73acfeb85d8de691b51914fa5f3825912eb2de9637d30cc07215495d705377ced01819c28044179b66c6503db2041111b712b04ad3c5f5c9463388d53b44b639",
+          "sha256": "d42f337e8d93af8815d8287fb2410cd5406f0dee19c01bf668c6360d428a64f8",
+          "sha1": "b9eeb5a0d2ca7f59aa18a61957e2e411cf739ce5",
+          "md5": "5273387b3b1f47d8160575ca5eac2629"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "cc.tweaked",
+          "module": "cc-tweaked-1.20.1-core",
+          "version": {
+            "requires": "1.110.3"
+          }
+        },
+        {
+          "group": "org.slf4j",
+          "module": "slf4j-api",
+          "version": {
+            "requires": "2.0.6"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "31.1-jre"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "plugin-api-1.1.0-1.110.3.jar",
+          "url": "plugin-api-1.1.0-1.110.3.jar",
+          "size": 45281,
+          "sha512": "73acfeb85d8de691b51914fa5f3825912eb2de9637d30cc07215495d705377ced01819c28044179b66c6503db2041111b712b04ad3c5f5c9463388d53b44b639",
+          "sha256": "d42f337e8d93af8815d8287fb2410cd5406f0dee19c01bf668c6360d428a64f8",
+          "sha1": "b9eeb5a0d2ca7f59aa18a61957e2e411cf739ce5",
+          "md5": "5273387b3b1f47d8160575ca5eac2629"
+        }
+      ]
+    }
+  ]
+}
