@@ -8,11 +8,7 @@ val ccVersion: String by extra
 
 allprojects {
 	group = "net.clgd"
-	version = "1.1.0-$ccVersion" + if (System.getenv("GITHUB_SHA") == null) {
-		""
-	} else {
-		"-${System.getenv("GITHUB_SHA")}"
-	}
+	version = "1.1.1-$ccVersion"
 
 	repositories {
 		mavenCentral()
